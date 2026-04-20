@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Mood Journal</title>
+  <script src="[telegram.org](https://telegram.org/js/telegram-web-app.js)"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>How are you feeling?</h1>
+      <p class="subtitle">Tap to log your mood</p>
+    </header>
+
+    <div class="mood-grid">
+      <button class="mood-btn" data-mood="great" data-emoji="😄">
+        <span class="emoji">😄</span>
+        <span class="label">Great</span>
+      </button>
+      <button class="mood-btn" data-mood="good" data-emoji="🙂">
+        <span class="emoji">🙂</span>
+        <span class="label">Good</span>
+      </button>
+      <button class="mood-btn" data-mood="okay" data-emoji="😐">
+        <span class="emoji">😐</span>
+        <span class="label">Okay</span>
+      </button>
+      <button class="mood-btn" data-mood="low" data-emoji="😔">
+        <span class="emoji">😔</span>
+        <span class="label">Low</span>
+      </button>
+      <button class="mood-btn" data-mood="stressed" data-emoji="😫">
+        <span class="emoji">😫</span>
+        <span class="label">Stressed</span>
+      </button>
+      <button class="mood-btn" data-mood="anxious" data-emoji="😰">
+        <span class="emoji">😰</span>
+        <span class="label">Anxious</span>
+      </button>
+    </div>
+
+    <div class="quote-card" id="quoteCard">
+      <p id="quoteText"></p>
+    </div>
+
+    <section class="history-section">
+      <h2>Recent Moods</h2>
+      <div class="history-list" id="historyList">
+        <p class="empty-state">No moods logged yet</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
